@@ -32,6 +32,8 @@ if(! $conn )
   die('Could not connect: ' . mysql_error());
 }else{echo "database connected";}
 
+$line = geoip_record_by_name($hostname);
+
 mysql_select_db('VisitorInfo');
 
 $sql = "INSERT INTO tracker ".
