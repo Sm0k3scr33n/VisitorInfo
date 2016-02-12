@@ -13,5 +13,6 @@ CREATE TABLE `tracker` (
   `longitude` varchar(30) DEFAULT NULL,
   `dma_code` varchar(20) DEFAULT NULL,
   `area_code` int(10) DEFAULT NULL,
+  `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
